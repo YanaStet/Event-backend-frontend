@@ -1,0 +1,53 @@
+# Логи та тимчасові файли
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Директорії залежностей
+node_modules/
+**/node_modules/
+
+# Файли середовища (env)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDE та редактори
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Файли збірки
+dist/
+build/
+**/build/
+**/dist/
+*.exe
+*.out
+
+# MongoDB
+data/db/
+*.ns
+*.0
+*.1
+
+# Фронтенд (React)
+**/.cache/
+**/.next/
+**/out/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
