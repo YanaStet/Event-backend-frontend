@@ -1,9 +1,9 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 
 import {registerValidator, loginValidator, postCreateValidator} from './validations.js';
 
-import UserModel from './models/user.js';
 import checkAuth from './utils/checkAuth.js';
 import * as postController from './controllers/PostController.js';
 import * as userController from './controllers/UserController.js';
@@ -12,6 +12,7 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
+app.use(cors());
 
 mongoose
 .connect('mongodb+srv://yanastetforcomp:YANA2580@cluster0.s2lmenk.mongodb.net/user')
