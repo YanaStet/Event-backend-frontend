@@ -5,6 +5,11 @@
   font-family: "Roboto";
 }
 
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -70,6 +75,9 @@ main .primary__subtitle {
   margin-bottom: 30px;
 }
 main .primary__register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 40px;
   width: 150px;
   font-size: 18px;
@@ -96,7 +104,7 @@ main .joined__title {
 main .joined__people {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 main .joined__card {
   padding: 25px;
@@ -152,4 +160,52 @@ main .footer__content-nav ul li:hover {
 }
 main .footer__content-nav ul li:hover a {
   color: white;
+}
+
+.modal {
+  text-align: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  background-color: rgba(98, 98, 98, 0.4745098039);
+  width: 100vw;
+  height: 100vh;
+}
+.modal__wrapper {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 150px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.modal__title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.modal__input {
+  height: 30px;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  background-color: #e4e4e4;
+  transition: 0.5s all;
+}
+.modal__input:focus {
+  transform: scale(1.02);
+}
+.modal__submit {
+  height: 40px;
+  font-size: 16px;
+  background-color: #a4a4a4;
+}
+.modal__submit:hover {
+  transform: scale(1.02);
+}
+
+.active {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

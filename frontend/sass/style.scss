@@ -5,6 +5,11 @@
     font-family: 'Roboto';
 }
 
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -76,6 +81,9 @@ main {
             margin-bottom: 30px;
         }
         &__register {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             height: 40px;
             width: 150px;
             font-size: 18px;
@@ -103,7 +111,7 @@ main {
         &__people {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
         }
         &__card {
             padding: 25px;
@@ -164,4 +172,52 @@ main {
             }
         }
     }
+}
+
+.modal {
+    text-align: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: #62626279;
+    width: 100vw;
+    height: 100vh;
+    &__wrapper {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 150px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    &__input {
+        height: 30px;
+        border-radius: 15px;
+        border: none;
+        margin-bottom: 10px;
+        padding: 0 10px;
+        background-color: #e4e4e4;
+        transition: 0.5s all;
+        &:focus {
+            transform: scale(1.02);
+        }
+    }
+    &__submit {
+        height: 40px;
+        font-size: 16px;
+        background-color: #a4a4a4;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}   
+
+.active {
+    display: block;
 }

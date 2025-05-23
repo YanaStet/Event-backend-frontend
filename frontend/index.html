@@ -21,8 +21,8 @@
                 <div class="header__nav">
                     <div class="nav">
                         <ul>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="#" class="log">Login</a></li>
+                            <li><a href="#" class="reg">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
             <div class="primary__wrapper">
                 <div class="primary__title">Welcome to site about our event!</div>
                 <div class="primary__subtitle">We will be happy to see you at our event. To join, register and you are free to come!</div>
-                <button class="primary__register">Register</button>
+                <a class="primary__register reg">Register</a>
             </div>
         </section>
 
@@ -41,27 +41,7 @@
             <div class="joined__wrapper">
                 <div class="joined__title">People, who joined:</div>
                 <div class="joined__people">
-                    <div class="joined__card">
-                        <img src="img/user.png" alt="User">
-                        <div class="joined__card-content">
-                            <div class="joined__card-name">Yana Stetsenko</div>
-                            <div class="joined__card-email">yanastetforcomp@gmail.com</div>
-                        </div>
-                    </div>
-                    <div class="joined__card">
-                        <img src="img/user.png" alt="User">
-                        <div class="joined__card-content">
-                            <div class="joined__card-name">Yana Stetsenko</div>
-                            <div class="joined__card-email">yanastetforcomp@gmail.com</div>
-                        </div>
-                    </div>
-                    <div class="joined__card">
-                        <img src="img/user.png" alt="User">
-                        <div class="joined__card-content">
-                            <div class="joined__card-name">Yana Stetsenko</div>
-                            <div class="joined__card-email">yanastetforcomp@gmail.com</div>
-                        </div>
-                    </div>
+                    <!-- your cards -->
                 </div>
             </div>
         </section>
@@ -72,14 +52,33 @@
                 <div class="footer__content">
                     <div class="footer__content-nav">
                         <ul>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Register</a></li>
+                            <li><a href="#" class="log">Login</a></li>
+                            <li><a href="#" class="reg">Register</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
     </main>
+
+    <form action="" class="modal" id="register">
+        <div class="modal__wrapper">
+            <div class="modal__title">Register</div>
+            <input class="modal__input" type="text" class="modal__input" placeholder="Name" required name="name">
+            <input class="modal__input" type="email" class="modal__input" placeholder="Email" required name="email">
+            <input class="modal__input" type="password" class="modal__input" placeholder="Password" required name="password">
+            <input class="modal__input modal__submit" type="submit" value="Register">
+        </div>
+    </form>
+
+    <form action="" class="modal" id="login">
+        <div class="modal__wrapper">
+            <div class="modal__title">Login</div>
+            <input class="modal__input" type="email" class="modal__input" placeholder="Email" required name="email">
+            <input class="modal__input" type="password" class="modal__input" placeholder="Password" required name="password">
+            <input class="modal__input modal__submit" type="submit" value="Register">
+        </div>
+    </form>
 
     <script src="js/script.js"></script>
 </body>
