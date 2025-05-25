@@ -62,21 +62,25 @@
     </main>
 
     <form action="" class="modal" id="register">
-        <div class="modal__wrapper">
-            <div class="modal__title">Register</div>
-            <input class="modal__input" type="text" class="modal__input" placeholder="Name" required name="name">
-            <input class="modal__input" type="email" class="modal__input" placeholder="Email" required name="email">
-            <input class="modal__input" type="password" class="modal__input" placeholder="Password" required name="password">
-            <input class="modal__input modal__submit" type="submit" value="Register">
+        <div class="modal__wrapper reg">
+            <div class="modal__content reg__content">
+                <div class="modal__title">Register</div>
+                <input class="modal__input" type="text" class="modal__input" placeholder="Name" required name="nameReg">
+                <input class="modal__input" type="email" class="modal__input" placeholder="Email" required name="emailReg">
+                <input class="modal__input" type="password" class="modal__input" placeholder="Password" required name="passwordReg">
+                <input class="modal__input modal__submit" type="submit" value="Register" id="regSubmit">
+            </div>
         </div>
     </form>
 
     <form action="" class="modal" id="login">
-        <div class="modal__wrapper">
-            <div class="modal__title">Login</div>
-            <input class="modal__input" type="email" class="modal__input" placeholder="Email" required name="email">
-            <input class="modal__input" type="password" class="modal__input" placeholder="Password" required name="password">
-            <input class="modal__input modal__submit" type="submit" value="Register">
+        <div class="modal__wrapper log">
+            <div class="modal__content log__content">
+                <div class="modal__title">Login</div>
+                <input class="modal__input" type="email" class="modal__input" placeholder="Email" required name="emailLog">
+                <input class="modal__input" type="password" class="modal__input" placeholder="Password" required name="passwordLog">
+                <input class="modal__input modal__submit" type="submit" value="Login" id="logSubmit">
+            </div>
         </div>
     </form>
 

@@ -40,6 +40,7 @@ main {
                 ul {
                     display: flex;
                     li {
+                        cursor: pointer;
                         margin-right: 30px;
                         list-style: none;
                         color: black;
@@ -81,6 +82,7 @@ main {
             margin-bottom: 30px;
         }
         &__register {
+            cursor: pointer;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -151,6 +153,7 @@ main {
                 ul {
                     display: flex;
                     li {
+                        cursor: pointer;
                         margin-right: 30px;
                         list-style: none;
                         color: black;
@@ -177,6 +180,7 @@ main {
 .modal {
     text-align: center;
     display: none;
+    flex-direction: column;
     position: fixed;
     top: 0;
     background-color: #62626279;
@@ -189,6 +193,8 @@ main {
         background-color: #fff;
         padding: 30px;
         border-radius: 20px;
+    }
+    &__content {
         display: flex;
         flex-direction: column;
     }
@@ -209,6 +215,7 @@ main {
         }
     }
     &__submit {
+        cursor: pointer;
         height: 40px;
         font-size: 16px;
         background-color: #a4a4a4;
